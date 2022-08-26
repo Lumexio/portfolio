@@ -83,45 +83,52 @@ button:focus-visible {
 }
 
 .coder {
-  -webkit-animation: bounce-in 8s ease-in infinite normal;
-  -moz-animation: bounce-in 8s ease-in infinite normal;
-  -ms-animation: bounce-in 8s ease-in infinite normal;
-  animation: bounce-in 8s ease-in infinite normal;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
-@-webkit-keyframes bounce-in {
+@keyframes fadeIn {
   0% {
     opacity: 0;
-    -webkit-transform: scale(0.3);
-    transform: scale(0.3);
-  }
-  50% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  70% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
   }
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    opacity: 1;
   }
 }
 
-@keyframes bounce-in {
+@-moz-keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: scale(0.3);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  70% {
-    transform: scale(0.9);
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

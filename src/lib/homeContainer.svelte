@@ -1,4 +1,5 @@
 <script>
+  // @ts-ignore
   import { onMount } from "svelte";
 
   onMount(() => {
@@ -10,25 +11,28 @@
       );
     }
     //document.getElementById("coder").classList.add("coder");
-    //document.getElementById("coder").classList.remove("coder");
+    //
     // el.innerHTML = "";
     //el.innerHTML = element;
     let arrayCoder = ["frontend", "backend", "web"];
     //let textArray = null;
-    let interval = 8000;
-    let flag = true;
+    let interval = 5000;
+
     let i = 0;
     function changer(el) {
-      el.innerHTML = "";
-
-      // while (flag == true) {
+      // el.innerHTML = "";
       setInterval(() => {
+        document.getElementById("coder").classList.remove("coder");
+        document.getElementById("coder").classList.add("coder");
         el.innerHTML = arrayCoder[i];
-        console.log(el.innerHTML);
+
         i++;
-      }, i * interval);
+
+        if (i > 2) {
+          i = 0;
+        }
+      }, interval);
     }
-    // }
 
     changer(document.getElementById("coder"));
     typeWriter(document.getElementById("elementEl"));
