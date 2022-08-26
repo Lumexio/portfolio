@@ -9,31 +9,27 @@
         setTimeout(() => (el.innerHTML += letter), 95 * i)
       );
     }
+    //document.getElementById("coder").classList.add("coder");
+    //document.getElementById("coder").classList.remove("coder");
+    // el.innerHTML = "";
+    //el.innerHTML = element;
     let arrayCoder = ["frontend", "backend", "web"];
     //let textArray = null;
-    let tempnew = null;
-    let tempold = null;
+    let interval = 8000;
+    let flag = true;
+    let i = 0;
     function changer(el) {
       el.innerHTML = "";
 
-      arrayCoder.forEach((element, index) => {
-        setTimeout(function () {
-          tempnew = index;
-
-          if (tempold != tempnew) {
-            console.log("Del class", tempold, tempnew);
-            document.getElementById("coder").classList.add("coder");
-
-            el.innerHTML = element;
-          }
-
-          tempold = tempnew;
-          document.getElementById("coder").classList.remove("coder");
-        }, index * 8000);
-      });
-
-      setInterval(() => changer(el), 1 * 24000);
+      // while (flag == true) {
+      setInterval(() => {
+        el.innerHTML = arrayCoder[i];
+        console.log(el.innerHTML);
+        i++;
+      }, i * interval);
     }
+    // }
+
     changer(document.getElementById("coder"));
     typeWriter(document.getElementById("elementEl"));
   });
