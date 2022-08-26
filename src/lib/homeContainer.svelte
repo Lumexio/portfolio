@@ -1,4 +1,5 @@
 <script>
+  // @ts-ignore
   import { onMount } from "svelte";
 
   onMount(() => {
@@ -9,20 +10,30 @@
         setTimeout(() => (el.innerHTML += letter), 95 * i)
       );
     }
-    let arrayCoder = [" frontend ", " backend ", " web "];
-    let textArray = null;
+    //document.getElementById("coder").classList.add("coder");
+    //
+    // el.innerHTML = "";
+    //el.innerHTML = element;
+    let arrayCoder = ["frontend", "backend", "web"];
+    //let textArray = null;
+    let interval = 5000;
 
+    let i = 0;
     function changer(el) {
-      el.innerHTML = "";
-      arrayCoder.forEach((element, index) => {
-        setTimeout(function () {
-          document.getElementById("coder").classList.remove("coder");
-          el.innerHTML = element;
-          document.getElementById("coder").classList.add("coder");
-        }, index * 8000);
-      });
-      setInterval(() => changer(el), 24000);
+      // el.innerHTML = "";
+      setInterval(() => {
+        document.getElementById("coder").classList.remove("coder");
+        document.getElementById("coder").classList.add("coder");
+        el.innerHTML = arrayCoder[i];
+
+        i++;
+
+        if (i > 2) {
+          i = 0;
+        }
+      }, interval);
     }
+
     changer(document.getElementById("coder"));
     typeWriter(document.getElementById("elementEl"));
   });
@@ -31,13 +42,12 @@
 <div id="Home" class="home-container-style ">
   <div>
     <h1 id="elementEl">Francisco Salazar Mendoza</h1>
-    <h2>
+    <h1>
       <code
-        style="background-color:yellow;color:black"
+        style="background-color:yellow;color:black;margin-left:1em"
         id="coder"
-        class="coder"
-      /> developer
-    </h2>
+      /><spacer type="block" width="20" />developer
+    </h1>
   </div>
 
   <!-- <div class="featured">
@@ -77,48 +87,5 @@
 
   code {
     font-family: tahoma;
-  }
-  .coder {
-    -webkit-animation: bounce-in 8s ease-in infinite normal;
-    -moz-animation: bounce-in 8s ease-in infinite normal;
-    -ms-animation: bounce-in 8s ease-in infinite normal;
-    animation: bounce-in 8s ease-in infinite normal;
-  }
-  @-webkit-keyframes bounce-in {
-    0% {
-      opacity: 0;
-      -webkit-transform: scale(0.3);
-      transform: scale(0.3);
-    }
-    50% {
-      opacity: 1;
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
-    70% {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
-    }
-    100% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
-  }
-
-  @keyframes bounce-in {
-    0% {
-      opacity: 0;
-      transform: scale(0.3);
-    }
-    50% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    70% {
-      transform: scale(0.9);
-    }
-    100% {
-      transform: scale(1);
-    }
   }
 </style>
