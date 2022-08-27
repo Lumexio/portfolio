@@ -30,23 +30,17 @@
         if (i > 2) {
           i = 0;
         }
-        tagid.classList.add("coder");
+
         switch (i) {
           case 0:
-            tagid.classList.remove("coder");
-            tagid.classList.toggle("coder");
             el.innerHTML = arrayCoder[i];
 
             break;
           case 1:
-            tagid.classList.remove("coder");
-            tagid.classList.toggle("coder");
             el.innerHTML = arrayCoder[i];
 
             break;
           case 2:
-            tagid.classList.remove("coder");
-            tagid.classList.toggle("coder");
             el.innerHTML = arrayCoder[i];
 
             break;
