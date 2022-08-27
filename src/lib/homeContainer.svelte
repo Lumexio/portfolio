@@ -10,31 +10,51 @@
         setTimeout(() => (el.innerHTML += letter), 95 * i)
       );
     }
-    //document.getElementById("coder").classList.add("coder");
+
     //
     // el.innerHTML = "";
     //el.innerHTML = element;
     let arrayCoder = ["frontend", "backend", "web"];
     //let textArray = null;
-    let interval = 5000;
+    let interval = 4000;
+    let tagid = document.getElementById("codertag");
 
     let i = 0;
     function changer(el) {
       // el.innerHTML = "";
+      tagid.classList.add("coder");
+      el.innerHTML = arrayCoder[0];
+
       setInterval(() => {
-        document.getElementById("coder").classList.remove("coder");
-        document.getElementById("coder").classList.add("coder");
-        el.innerHTML = arrayCoder[i];
-
         i++;
-
         if (i > 2) {
           i = 0;
+        }
+        tagid.classList.add("coder");
+        switch (i) {
+          case 0:
+            tagid.classList.remove("coder");
+            tagid.classList.toggle("coder");
+            el.innerHTML = arrayCoder[i];
+
+            break;
+          case 1:
+            tagid.classList.remove("coder");
+            tagid.classList.toggle("coder");
+            el.innerHTML = arrayCoder[i];
+
+            break;
+          case 2:
+            tagid.classList.remove("coder");
+            tagid.classList.toggle("coder");
+            el.innerHTML = arrayCoder[i];
+
+            break;
         }
       }, interval);
     }
 
-    changer(document.getElementById("coder"));
+    changer(tagid);
     typeWriter(document.getElementById("elementEl"));
   });
 </script>
@@ -45,7 +65,7 @@
     <h1>
       <code
         style="background-color:yellow;color:black;margin-left:1em"
-        id="coder"
+        id="codertag"
       /><spacer type="block" width="20" />developer
     </h1>
   </div>
