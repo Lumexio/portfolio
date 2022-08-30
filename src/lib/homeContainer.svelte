@@ -11,18 +11,15 @@
       );
     }
 
-    //
-    // el.innerHTML = "";
-    //el.innerHTML = element;
     let arrayCoder = ["frontend", "backend", "web"];
-    //let textArray = null;
-    let interval = 4000;
+
+    let interval = 1000;
     let tagid = document.getElementById("codertag");
 
     let i = 0;
     function changer(el) {
       // el.innerHTML = "";
-      tagid.classList.add("coder");
+      // tagid.classList.add("coder");
       el.innerHTML = arrayCoder[0];
 
       setInterval(() => {
@@ -60,14 +57,12 @@
 </script>
 
 <div id="Home" class="home-container-style ">
-  <div>
+  <div class="temp">
     <h1 id="elementEl">Francisco Salazar Mendoza</h1>
-    <h1>
-      <code
-        style="background-color:yellow;color:black;margin-left:1em"
-        id="codertag"
-      /><spacer type="block" width="20" />developer
-    </h1>
+    <h2>
+      <code id="codertag" />
+    </h2>
+    <h2>developer</h2>
   </div>
 
   <!-- <div class="featured">
@@ -89,6 +84,12 @@
     height: 100vh;
     /* grid-template-columns: repeat(1, minmax(5rem, 1fr)); */
   }
+  .temp {
+    display: grid;
+    place-items: center;
+
+    grid-template-columns: repeat(1, minmax(5rem, 1fr));
+  }
 
   #elementEl::after {
     content: "|";
@@ -104,7 +105,12 @@
       opacity: 0;
     }
   }
-
+  #codertag {
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+    padding: 3px;
+  }
   code {
     font-family: tahoma;
   }
