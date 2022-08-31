@@ -14,7 +14,6 @@
       "https://prod.spline.design/mKfp9mZmyyr3deUs/scene.splinecode",
       (scene) => {
         polaroidCamera = scene;
-        console.log(polaroidCamera);
       }
     );
   });
