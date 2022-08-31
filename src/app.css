@@ -26,7 +26,11 @@
   --timetypescript: 10.5s;
   --timeinsomnia: 7.3s;
 }
-
+.container .s-LzDeSs34ORWQ {
+  position: fixed;
+  height: 100vh;
+  z-index: -1;
+}
 html {
   scroll-behavior: smooth;
 }

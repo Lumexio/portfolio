@@ -16,7 +16,22 @@
     "vite": "^3.0.7"
   },
   "dependencies": {
+    "@splinetool/loader": "^0.9.104",
+    "@splinetool/runtime": "^0.9.104",
     "svelte-cubed": "^0.2.1",
     "three": "^0.143.0"
-  }
+  },
+  "description": "This template should help get you started developing with Svelte in Vite.",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lumexio/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lumexio/portfolio/issues"
+  },
+  "homepage": "https://github.com/Lumexio/portfolio#readme"
 }
