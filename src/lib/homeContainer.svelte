@@ -58,17 +58,6 @@
     </h2>
     <h2>developer</h2>
   </div>
-
-  <!-- <div class="featured">
-    <h3>
-      <div class="message ">
-        <div class="word1">frontend</div>
-        <div class="word2">backend</div>
-        <div class="word3">web</div>
-      </div>
-      <span class="position-span">developer </span>
-    </h3>
-  </div> -->
 </div>
 
 <style>
