@@ -26,7 +26,8 @@
   --timetypescript: 10.5s;
   --timeinsomnia: 7.3s;
 }
-.container .s-LzDeSs34ORWQ {
+.container .svelte-1uqz219,
+canvas .svelte-1uqz219 {
   position: fixed;
   height: 100vh;
   z-index: -1;
