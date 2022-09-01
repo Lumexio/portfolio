@@ -2,16 +2,15 @@
   // @ts-nocheck
 
   import sveltelogo from "../assets/svelte.svg";
-  import csslogo from "../assets/css3.svg";
-  import jslogo from "../assets/js.svg";
+
   import gitlogo from "../assets/git.svg";
   import phplogo from "../assets/php.svg";
-  import htmllogo from "../assets/html.svg";
+
   import linuxlogo from "../assets/linux.svg";
   import nodelogo from "../assets/node.svg";
   import vuelogo from "../assets/vue.svg";
   import vuetifyjslogo from "../assets/vuetifyjs.svg";
-  import typescriptlogo from "../assets/typescript.svg";
+
   import insomnialogo from "../assets/insomnia.svg";
   var root = document.querySelector(":root");
   var rootStyles = getComputedStyle(root);
@@ -21,14 +20,7 @@
       "--timesvelte",
       Math.floor(Math.random() * 10) + 3 + "s"
     );
-    root.style.setProperty(
-      "--timecss",
-      Math.floor(Math.random() * 10) + 3 + "s"
-    );
-    root.style.setProperty(
-      "--timejs",
-      Math.floor(Math.random() * 10) + 3 + "s"
-    );
+
     root.style.setProperty(
       "--timegit",
       Math.floor(Math.random() * 10) + 3 + "s"
@@ -37,10 +29,7 @@
       "--timephp",
       Math.floor(Math.random() * 10) + 3 + "s"
     );
-    root.style.setProperty(
-      "--timehtml",
-      Math.floor(Math.random() * 10) + 3 + "s"
-    );
+
     root.style.setProperty(
       "--timelinux",
       Math.floor(Math.random() * 10) + 3 + "s"
@@ -57,10 +46,7 @@
       "--timevuetifyjs",
       Math.floor(Math.random() * 10) + 3 + "s"
     );
-    root.style.setProperty(
-      "--timetypescript",
-      Math.floor(Math.random() * 10) + 3 + "s"
-    );
+
     root.style.setProperty(
       "--timeinsomnia",
       Math.floor(Math.random() * 10) + 3 + "s"
@@ -91,34 +77,6 @@
       href: "https://svelte.dev",
       alt: "Vuetifyjs Logo",
       css: "vuetifyjs",
-      target: "_blank",
-    },
-    {
-      src: csslogo,
-      href: "https://svelte.dev",
-      alt: "Css Logo",
-      css: "css",
-      target: "_blank",
-    },
-    {
-      src: htmllogo,
-      href: "https://svelte.dev",
-      alt: "Html Logo",
-      css: "html",
-      target: "_blank",
-    },
-    {
-      src: jslogo,
-      href: "https://svelte.dev",
-      alt: "Java script Logo",
-      css: "js",
-      target: "_blank",
-    },
-    {
-      src: typescriptlogo,
-      href: "https://svelte.dev",
-      alt: "Typescript Logo",
-      css: "typescript",
       target: "_blank",
     },
 
@@ -160,9 +118,9 @@
   ];
 </script>
 
-<div id="Knowledge" class="knowledge-container-style">
+<div id="Knowledge" class=" glass">
   <h1>My toolbox</h1>
-  <section class="grid-container">
+  <section class="grid-container icons-space">
     {#each srcarray as item}
       <div class="flex-logo">
         <!-- <a href={item.href} target={item.target}> -->
@@ -174,6 +132,18 @@
 </div>
 
 <style>
+  .glass {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  }
   .grid-container {
     display: grid;
     gap: 1rem;
@@ -188,9 +158,10 @@
     height: 100%;
     width: 100%;
   }
-  .knowledge-container-style {
-    height: 100vh;
+  .icons-space {
+    margin: 1em;
   }
+
   .logo {
     height: 6em;
 
@@ -201,21 +172,13 @@
     filter: drop-shadow(0 0 2em #ff3e00aa);
   }
 
-  .logo.css:hover {
-    filter: drop-shadow(0 0 2em #006affaa);
-  }
-  .logo.js:hover {
-    filter: drop-shadow(0 0 2em #33ff00aa);
-  }
   .logo.git:hover {
     filter: drop-shadow(0 0 3em #d48e0baa);
   }
   .logo.php:hover {
     filter: drop-shadow(0 0 2em #c441c4aa);
   }
-  .logo.html:hover {
-    filter: drop-shadow(0 0 2em #f6ff00aa);
-  }
+
   .logo.linux:hover {
     filter: drop-shadow(0 0 2em #00ffeaaa);
   }
@@ -231,27 +194,16 @@
   .logo.insomnia:hover {
     filter: drop-shadow(0 0 2em #3752ffaa);
   }
-  .logo.typescript:hover {
-    filter: drop-shadow(0 0 2em #d400ffaa);
-  }
   .logo.insomnia:hover {
     filter: drop-shadow(0 0 2em #00aeffaa);
   }
-  /* ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 20px;
-  } */
+
   .logo.svelte::after,
-  .logo.css::after,
   .logo.git::after,
-  .logo.html::after,
   .logo.insomnia::after,
-  .logo.js::after,
   .logo.linux::after,
   .logo.node::after,
   .logo.php::after,
-  .logo.typescript::after,
   .logo.vue::after,
   .logo.vuetifyjs::after {
     content: "";
@@ -268,15 +220,11 @@
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
   .logo.svelte:hover,
-  .logo.css:hover,
   .logo.git:hover,
-  .logo.html:hover,
   .logo.insomnia:hover,
-  .logo.js:hover,
   .logo.linux:hover,
   .logo.node:hover,
   .logo.php:hover,
-  .logo.typescript:hover,
   .logo.vue:hover,
   .logo.vuetifyjs:hover {
     -webkit-transform: scale(1.25, 1.25);
@@ -285,15 +233,11 @@
 
   /* Fade in the pseudo-element with the bigger shadow */
   .logo.svelte,
-  .logo.css,
   .logo.git,
-  .logo.html,
   .logo.insomnia,
-  .logo.js,
   .logo.linux,
   .logo.node,
   .logo.php,
-  .logo.typescript,
   .logo.vue,
   .logo.vuetifyjs:hover::after {
     opacity: 1;
@@ -324,32 +268,7 @@
       filter: none;
     }
   }
-  .logo.css {
-    animation: css-shadow 2s ease-in-out var(--timecss);
-  }
-  @-webkit-keyframes css-shadow {
-    0% {
-      filter: none;
-    }
-    50% {
-      filter: drop-shadow(0 0 2em #006affaa);
-    }
-    100% {
-      filter: none;
-    }
-  }
 
-  @keyframes css-shadow {
-    0% {
-      filter: none;
-    }
-    50% {
-      filter: drop-shadow(0 0 2em #006affaa);
-    }
-    100% {
-      filter: none;
-    }
-  }
   .logo.git {
     animation: git-shadow 2s ease-in-out var(--timegit) infinite;
   }
@@ -376,32 +295,7 @@
       filter: none;
     }
   }
-  .logo.html {
-    animation: html-shadow 2s ease-in-out var(--timehtml) infinite;
-  }
-  @-webkit-keyframes html-shadow {
-    0% {
-      filter: none;
-    }
-    50% {
-      filter: drop-shadow(0 0 2em #f6ff00aa);
-    }
-    100% {
-      filter: none;
-    }
-  }
 
-  @keyframes html-shadow {
-    0% {
-      filter: none;
-    }
-    50% {
-      filter: drop-shadow(0 0 2em #f6ff00aa);
-    }
-    100% {
-      filter: none;
-    }
-  }
   .logo.insomnia {
     animation: insomnia-shadow 2s ease-in-out var(--timeinsomnia) infinite;
   }
@@ -428,32 +322,7 @@
       filter: none;
     }
   }
-  .logo.js {
-    animation: js-shadow 2s ease-in-out var(--timejs) infinite;
-  }
-  @-webkit-keyframes js-shadow {
-    0% {
-      filter: none;
-    }
-    50% {
-      filter: drop-shadow(0 0 2em #33ff00aa);
-    }
-    100% {
-      filter: none;
-    }
-  }
 
-  @keyframes js-shadow {
-    0% {
-      filter: none;
-    }
-    50% {
-      filter: drop-shadow(0 0 2em #33ff00aa);
-    }
-    100% {
-      filter: none;
-    }
-  }
   .logo.linux {
     animation: linux-shadow 2s ease-in-out var(--timelinux) infinite;
   }
@@ -532,32 +401,7 @@
       filter: none;
     }
   }
-  .logo.typescript {
-    animation: typescript-shadow 2s ease-in-out var(--timetypescript) infinite;
-  }
-  @-webkit-keyframes typescript-shadow {
-    0% {
-      filter: none;
-    }
-    50% {
-      filter: drop-shadow(0 0 2em #d400ffaa);
-    }
-    100% {
-      filter: none;
-    }
-  }
 
-  @keyframes typescript-shadow {
-    0% {
-      filter: none;
-    }
-    50% {
-      filter: drop-shadow(0 0 2em #d400ffaa);
-    }
-    100% {
-      filter: none;
-    }
-  }
   .logo.vue {
     animation: vue-shadow 2s ease-in-out var(--timevue) infinite;
   }
