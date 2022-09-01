@@ -32,12 +32,12 @@ canvas.svelte-1uqz219 {
   height: 100vh;
   z-index: -1;
 }
-.container.s-LzDeSs34ORWQ,
+/* .container.s-LzDeSs34ORWQ,
 canvas.s-LzDeSs34ORWQ {
   position: fixed !important;
   height: 100vh;
   z-index: -1;
-}
+} */
 html {
   scroll-behavior: smooth;
 }
