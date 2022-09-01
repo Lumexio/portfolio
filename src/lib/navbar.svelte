@@ -14,6 +14,7 @@
   .nav-style {
     height: 10vh;
     width: 100%;
+    z-index: 1;
     background-image: linear-gradient(rgba(0, 0, 0, 0, 6));
   }
   nav ul li {

@@ -26,6 +26,11 @@
   --timetypescript: 10.5s;
   --timeinsomnia: 7.3s;
 }
+.container.s-LzDeSs34ORWQ,
+canvas.s-LzDeSs34ORWQ {
+  z-index: -1;
+}
+
 .container .s-LzDeSs34ORWQ {
   position: fixed;
   height: 100vh;
@@ -62,7 +67,8 @@ h1 {
 #app {
   max-width: 100%;
   /* margin: 0 auto; */
-  padding: 2rem;
+  display: grid;
+  place-content: center;
   text-align: center;
 }
 
@@ -100,54 +106,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
-/* .coder {
-  -webkit-animation: fadeIn 4000ms ease-in infinite normal;
-  -moz-animation: fadeIn 4000ms ease-in infinite normal;
-  -ms-animation: fadeIn 4000ms ease-in infinite normal;
-  animation: fadeIn 4000ms ease-in infinite normal;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
