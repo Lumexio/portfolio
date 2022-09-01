@@ -26,7 +26,12 @@
   --timetypescript: 10.5s;
   --timeinsomnia: 7.3s;
 }
-
+.container.svelte-1uqz219,
+canvas.svelte-1uqz219 {
+  position: fixed !important;
+  height: 100vh;
+  z-index: -1;
+}
 .container.s-LzDeSs34ORWQ,
 canvas.s-LzDeSs34ORWQ {
   position: fixed !important;
