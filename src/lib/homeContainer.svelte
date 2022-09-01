@@ -55,8 +55,8 @@
     <h1 id="elementEl">Francisco Salazar Mendoza</h1>
     <h2>
       <code id="codertag" />
+      developer
     </h2>
-    <h2>developer</h2>
   </div>
 </div>
 
