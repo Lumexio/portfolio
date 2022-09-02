@@ -1,8 +1,10 @@
 <script>
-  // @ts-ignore
   import { onMount } from "svelte";
 
   onMount(() => {
+    /**
+     * @param {HTMLElement} el
+     */
     function typeWriter(el) {
       const textArray = el.innerHTML.split("");
       el.innerHTML = "";
@@ -17,9 +19,11 @@
     let tagid = document.getElementById("codertag");
 
     let i = 0;
+
+    /**
+     * @param {HTMLElement} el
+     */
     function changer(el) {
-      // el.innerHTML = "";
-      // tagid.classList.add("coder");
       el.innerHTML = arrayCoder[0];
 
       setInterval(() => {
@@ -69,7 +73,6 @@
     display: grid;
     place-items: center;
     height: 100vh;
-    /* grid-template-columns: repeat(1, minmax(5rem, 1fr)); */
   }
   .glass {
     background: linear-gradient(
