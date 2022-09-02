@@ -93,6 +93,8 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/**Comment while i make a light 3d animation mode
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -107,4 +109,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
