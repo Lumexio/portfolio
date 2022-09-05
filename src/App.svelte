@@ -2,14 +2,16 @@
   import Navbar from "./lib/navbar.svelte";
   import HomeContainer from "./lib/homeContainer.svelte";
   import KnowledgeContainer from "./lib/knowledgeContainer.svelte";
-  import ProyectsContainer from "./lib/ProyectsContainer.svelte";
+  import ThreeDContainer from "./lib/ThreeDContainer.svelte";
+  import ContactContainer from "./lib/contactContainer.svelte";
 </script>
 
 <main>
   <Navbar />
   <HomeContainer />
   <KnowledgeContainer />
-  <ProyectsContainer />
+  <ContactContainer />
+  <ThreeDContainer />
 
   <!-- <div class="card">
     
