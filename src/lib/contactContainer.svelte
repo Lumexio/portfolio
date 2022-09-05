@@ -15,7 +15,6 @@
     background-color: #212121;
     box-shadow: -0.5rem 0.5rem 0 #fab700;
     border: 3px solid #fab700;
-    
   }
   .temp {
     display: grid;
@@ -47,27 +46,29 @@
     outline-style: double;
     border-radius: 2px;
   }
-  
+
   #button-primary {
     border-radius: 0.8em;
     background-color: #fab700;
     color: black;
     margin: 0.5rem;
-    
   }
   #button-primary:active {
     background-color: #e7fa00;
   }
-  
 </style>
 
 <div id="Contact" class="home-container-style ">
   <div class="temp card">
     <h1>Talk to me</h1>
-    <form style="text-align: right;"    action="mailto:lumexio.dev@gmail.com" method="post" enctype="text/plain">
+    <form
+      style="text-align: right;"
+      action="mailto:lumexio.dev@gmail.com"
+      method="post"
+      enctype="text/plain">
       <input type="text" placeholder="Subject" />
       <textarea type="text" placeholder="Messege" />
-      <button  type="submit" id="button-primary">Send</button>
+      <button type="submit" id="button-primary">Send</button>
     </form>
   </div>
 </div>
