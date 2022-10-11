@@ -18,7 +18,10 @@
   "dependencies": {
     "@splinetool/loader": "^0.9.104",
     "@splinetool/runtime": "^0.9.104",
+    "node-sass": "^7.0.1",
+    "sass": "^1.54.8",
     "svelte-cubed": "^0.2.1",
+    "svelte-preprocess": "^4.10.7",
     "three": "^0.143.0"
   },
   "description": "This template should help get you started developing with Svelte in Vite.",
