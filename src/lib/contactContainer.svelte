@@ -1,11 +1,6 @@
 <script>
-</script>
 
-<div id="Contact" class="home-container-style ">
-  <div class="temp glass">
-    <h1 id="elementEl">How to reach me</h1>
-  </div>
-</div>
+</script>
 
 <style>
   h1 {
@@ -16,22 +11,31 @@
     place-items: center;
     height: 100vh;
   }
-  .glass {
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  .card {
+    background-color: #212121;
+    box-shadow: 0.5rem 0.5rem 0 #fab700;
+    border: 3px solid #fab700;
   }
   .temp {
     display: grid;
     place-items: center;
-
     grid-template-columns: repeat(1, minmax(5rem, 1fr));
   }
+  input {
+    outline: #e4e4e4;
+    font-size: 1.1rem;
+  }
+  input:hover {
+    outline: #fab700;
+    outline-width: 4px;
+    outline-style: double;
+    border-radius: 2px;
+  }
 </style>
+
+<div id="Contact" class="home-container-style ">
+  <div class="temp card">
+    <h1 id="elementEl">How to reach me</h1>
+    <input type="text" placeholder="Subject" />
+  </div>
+</div>
