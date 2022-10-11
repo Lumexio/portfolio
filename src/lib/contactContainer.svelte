@@ -13,19 +13,30 @@
   }
   .card {
     background-color: #212121;
+<<<<<<< HEAD
     box-shadow: -0.5rem 0.5rem 0 #fab700;
+=======
+    box-shadow: 0.5rem 0.5rem 0 #fab700;
+>>>>>>> 4d6f1b6 (fix: Card contact 1 of 3 update)
     border: 3px solid #fab700;
   }
   .temp {
     display: grid;
+<<<<<<< HEAD
     place-items: start;
+=======
+    place-items: center;
+>>>>>>> 4d6f1b6 (fix: Card contact 1 of 3 update)
     grid-template-columns: repeat(1, minmax(5rem, 1fr));
   }
   input {
     outline: #e4e4e4;
     font-size: 1.1rem;
+<<<<<<< HEAD
     margin: 0.5rem;
     width: 100%;
+=======
+>>>>>>> 4d6f1b6 (fix: Card contact 1 of 3 update)
   }
   input:hover {
     outline: #fab700;
@@ -60,6 +71,7 @@
 
 <div id="Contact" class="home-container-style ">
   <div class="temp card">
+<<<<<<< HEAD
     <h1>Talk to me</h1>
     <form
       style="text-align: right;"
@@ -70,5 +82,9 @@
       <textarea type="text" placeholder="Messege" />
       <button type="submit" id="button-primary">Send</button>
     </form>
+=======
+    <h1 id="elementEl">How to reach me</h1>
+    <input type="text" placeholder="Subject" />
+>>>>>>> 4d6f1b6 (fix: Card contact 1 of 3 update)
   </div>
 </div>
