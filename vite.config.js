@@ -5,8 +5,6 @@ import preprocess from 'svelte-preprocess';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/portfolio/",
-  plugins: [svelte({
-    preprocess: preprocess()
-  })]
+  base: "/",
+  plugins: [svelte()]
 })
