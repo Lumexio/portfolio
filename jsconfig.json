@@ -31,8 +31,10 @@
    * to avoid limiting type declarations.
    */
   "include": [
+    ,
     "src/**/*.svelte",
     "src/**/*.d.ts",
-    "src/**/*.js"
+    "src/**/*.js",
+    "vite.config.js"
   ]
 }
