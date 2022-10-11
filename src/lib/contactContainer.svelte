@@ -14,10 +14,14 @@
   .card {
     background-color: #212121;
 <<<<<<< HEAD
+<<<<<<< HEAD
     box-shadow: -0.5rem 0.5rem 0 #fab700;
 =======
     box-shadow: 0.5rem 0.5rem 0 #fab700;
 >>>>>>> 4d6f1b6 (fix: Card contact 1 of 3 update)
+=======
+    box-shadow: -0.5rem 0.5rem 0 #fab700;
+>>>>>>> db46a71 (fix: Input style)
     border: 3px solid #fab700;
   }
   .temp {
@@ -33,10 +37,14 @@
     outline: #e4e4e4;
     font-size: 1.1rem;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin: 0.5rem;
     width: 100%;
 =======
 >>>>>>> 4d6f1b6 (fix: Card contact 1 of 3 update)
+=======
+    margin: 0.5rem;
+>>>>>>> db46a71 (fix: Input style)
   }
   input:hover {
     outline: #fab700;
@@ -45,7 +53,11 @@
     border-radius: 2px;
   }
   textarea {
+<<<<<<< HEAD
     width: 100%;
+=======
+    min-width: 280px;
+>>>>>>> db46a71 (fix: Input style)
     min-height: 100px;
     outline: #e4e4e4;
     font-size: 1.1rem;
@@ -57,6 +69,7 @@
     outline-style: double;
     border-radius: 2px;
   }
+<<<<<<< HEAD
 
   #button-primary {
     border-radius: 0.8em;
@@ -67,6 +80,8 @@
   #button-primary:active {
     background-color: #e7fa00;
   }
+=======
+>>>>>>> db46a71 (fix: Input style)
 </style>
 
 <div id="Contact" class="home-container-style ">
@@ -84,7 +99,12 @@
     </form>
 =======
     <h1 id="elementEl">How to reach me</h1>
+    <input type="email" placeholder="Email" />
     <input type="text" placeholder="Subject" />
+<<<<<<< HEAD
 >>>>>>> 4d6f1b6 (fix: Card contact 1 of 3 update)
+=======
+    <textarea placeholder="Messege" />
+>>>>>>> db46a71 (fix: Input style)
   </div>
 </div>
