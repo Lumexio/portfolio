@@ -1,135 +1,122 @@
 <script>
   // @ts-nocheck
 
-  import sveltelogo from "../assets/svelte.svg";
+  import sveltelogo from '../assets/svelte.svg'
 
-  import gitlogo from "../assets/git.svg";
-  import phplogo from "../assets/php.svg";
+  import gitlogo from '../assets/git.svg'
+  import laravellogo from '../assets/laravel.svg'
 
-  import linuxlogo from "../assets/linux.svg";
-  import nodelogo from "../assets/node.svg";
-  import vuelogo from "../assets/vue.svg";
-  import vuetifyjslogo from "../assets/vuetifyjs.svg";
+  import linuxlogo from '../assets/linux.svg'
+  import nodelogo from '../assets/node.svg'
+  import vuelogo from '../assets/vue.svg'
+  import vuetifyjslogo from '../assets/vuetifyjs.svg'
 
-  import insomnialogo from "../assets/insomnia.svg";
-  var root = document.querySelector(":root");
-  var rootStyles = getComputedStyle(root);
-  var time = rootStyles.getPropertyValue("--timesvelte");
+  import insomnialogo from '../assets/insomnia.svg'
+  var root = document.querySelector(':root')
+  var rootStyles = getComputedStyle(root)
+  var time = rootStyles.getPropertyValue('--timesvelte')
   function randtimeanimation() {
     root.style.setProperty(
-      "--timesvelte",
-      Math.floor(Math.random() * 10) + 3 + "s"
-    );
+      '--timesvelte',
+      Math.floor(Math.random() * 10) + 3 + 's',
+    )
 
     root.style.setProperty(
-      "--timegit",
-      Math.floor(Math.random() * 10) + 3 + "s"
-    );
+      '--timegit',
+      Math.floor(Math.random() * 10) + 3 + 's',
+    )
     root.style.setProperty(
-      "--timephp",
-      Math.floor(Math.random() * 10) + 3 + "s"
-    );
+      '--timephp',
+      Math.floor(Math.random() * 10) + 3 + 's',
+    )
 
     root.style.setProperty(
-      "--timelinux",
-      Math.floor(Math.random() * 10) + 3 + "s"
-    );
+      '--timelinux',
+      Math.floor(Math.random() * 10) + 3 + 's',
+    )
     root.style.setProperty(
-      "--timenode",
-      Math.floor(Math.random() * 10) + 3 + "s"
-    );
+      '--timenode',
+      Math.floor(Math.random() * 10) + 3 + 's',
+    )
     root.style.setProperty(
-      "--timevue",
-      Math.floor(Math.random() * 10) + 3 + "s"
-    );
+      '--timevue',
+      Math.floor(Math.random() * 10) + 3 + 's',
+    )
     root.style.setProperty(
-      "--timevuetifyjs",
-      Math.floor(Math.random() * 10) + 3 + "s"
-    );
+      '--timevuetifyjs',
+      Math.floor(Math.random() * 10) + 3 + 's',
+    )
 
     root.style.setProperty(
-      "--timeinsomnia",
-      Math.floor(Math.random() * 10) + 3 + "s"
-    );
+      '--timeinsomnia',
+      Math.floor(Math.random() * 10) + 3 + 's',
+    )
   }
-  randtimeanimation();
+  randtimeanimation()
   setInterval(() => {
-    randtimeanimation();
-  }, 10000);
+    randtimeanimation()
+  }, 10000)
 
   let srcarray = [
     {
       src: sveltelogo,
-      href: "https://svelte.dev",
-      alt: "Svelte Logo",
-      css: "svelte",
-      target: "_blank",
+      href: 'https://svelte.dev',
+      alt: 'Svelte Logo',
+      css: 'svelte',
+      target: '_blank',
     },
     {
       src: vuelogo,
-      href: "https://svelte.dev",
-      alt: "Vue Logo",
-      css: "vue",
-      target: "_blank",
+      href: 'https://v2.vuejs.org',
+      alt: 'Vue Logo',
+      css: 'vue',
+      target: '_blank',
     },
     {
       src: vuetifyjslogo,
-      href: "https://svelte.dev",
-      alt: "Vuetifyjs Logo",
-      css: "vuetifyjs",
-      target: "_blank",
+      href: 'https://vuetifyjs.com/en/',
+      alt: 'Vuetifyjs Logo',
+      css: 'vuetifyjs',
+      target: '_blank',
     },
 
     {
-      src: phplogo,
-      href: "https://svelte.dev",
-      alt: "Php Logo",
-      css: "php",
-      target: "_blank",
+      src: laravellogo,
+      href: 'https://laravel.com/',
+      alt: 'Laralvel Logo',
+      css: 'laravel',
+      target: '_blank',
     },
     {
       src: nodelogo,
-      href: "https://svelte.dev",
-      alt: "Node Logo",
-      css: "node",
-      target: "_blank",
+      href: 'https://developer.mozilla.org/en-US/docs/Web/javascript',
+      alt: 'Node Logo',
+      css: 'node',
+      target: '_blank',
     },
-    {
-      src: insomnialogo,
-      href: "https://svelte.dev",
-      alt: "Insomnia Logo",
-      css: "insomnia",
-      target: "_blank",
-    },
+    // {
+    //   src: insomnialogo,
+    //   href: 'https://insomnia.rest/',
+    //   alt: 'Insomnia Logo',
+    //   css: 'insomnia',
+    //   target: '_blank',
+    // },
     {
       src: gitlogo,
-      href: "https://svelte.dev",
-      alt: "Git Logo",
-      css: "svelte",
-      target: "_blank",
+      href: 'https://git-scm.com/doc',
+      alt: 'Git Logo',
+      css: 'svelte',
+      target: '_blank',
     },
-    {
-      src: linuxlogo,
-      href: "https://svelte.dev",
-      alt: "Linux Logo",
-      css: "linux",
-      target: "_blank",
-    },
-  ];
+    // {
+    //   src: linuxlogo,
+    //   href: 'https://linux.die.net/',
+    //   alt: 'Linux Logo',
+    //   css: 'linux',
+    //   target: '_blank',
+    // },
+  ]
 </script>
-
-<div id="Knowledge" class=" glass">
-  <h1>My toolbox</h1>
-  <section class="grid-container icons-space">
-    {#each srcarray as item}
-      <div class="flex-logo">
-        <!-- <a href={item.href} target={item.target}> -->
-        <img src={item.src} class="logo {item.css}" alt={item.alt} />
-        <!-- </a> -->
-      </div>
-    {/each}
-  </section>
-</div>
 
 <style>
   .glass {
@@ -175,7 +162,7 @@
   .logo.git:hover {
     filter: drop-shadow(0 0 3em #d48e0baa);
   }
-  .logo.php:hover {
+  .logo.laravel:hover {
     filter: drop-shadow(0 0 2em #c441c4aa);
   }
 
@@ -203,10 +190,10 @@
   .logo.insomnia::after,
   .logo.linux::after,
   .logo.node::after,
-  .logo.php::after,
+  .logo.laravel::after,
   .logo.vue::after,
   .logo.vuetifyjs::after {
-    content: "";
+    content: '';
     border-radius: 5px;
     position: absolute;
     z-index: -1;
@@ -224,7 +211,7 @@
   .logo.insomnia:hover,
   .logo.linux:hover,
   .logo.node:hover,
-  .logo.php:hover,
+  .logo.laravel:hover,
   .logo.vue:hover,
   .logo.vuetifyjs:hover {
     -webkit-transform: scale(1.25, 1.25);
@@ -237,7 +224,7 @@
   .logo.insomnia,
   .logo.linux,
   .logo.node,
-  .logo.php,
+  .logo.laravel,
   .logo.vue,
   .logo.vuetifyjs:hover::after {
     opacity: 1;
@@ -375,10 +362,10 @@
       filter: none;
     }
   }
-  .logo.php {
-    animation: php-shadow 2s ease-in-out var(--timephp) infinite;
+  .logo.laravel {
+    animation: laravel-shadow 2s ease-in-out var(--timephp) infinite;
   }
-  @-webkit-keyframes php-shadow {
+  @-webkit-keyframes laravel-shadow {
     0% {
       filter: none;
     }
@@ -390,7 +377,7 @@
     }
   }
 
-  @keyframes php-shadow {
+  @keyframes laravel-shadow {
     0% {
       filter: none;
     }
@@ -455,3 +442,20 @@
     }
   }
 </style>
+
+<div id="Knowledge" class=" glass">
+  <h1>Hard skills</h1>
+  <section class="grid-container icons-space">
+    {#each srcarray as item}
+      <div class="flex-logo">
+        <a href={item.href} target={item.target}>
+          <img
+            src={item.src}
+            class="logo {item.css}"
+            alt={item.alt}
+            href={item.href} />
+        </a>
+      </div>
+    {/each}
+  </section>
+</div>
