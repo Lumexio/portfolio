@@ -50,12 +50,12 @@
     }
 
     changer(tagid);
-    typeWriter(document.getElementById("elementEl"));
+    // typeWriter(document.getElementById("elementEl"));
   });
 </script>
 
-<div id="Home" class="home-container-style ">
-  <div class="temp glass">
+<div  class="home-container-style ">
+  <div id="Home" class="temp glass  hidden">
     <h1 id="elementEl">Francisco Salazar Mendoza</h1>
     <h2>
       <code id="codertag" />
@@ -96,7 +96,7 @@
   #elementEl::after {
     content: "|";
     margin-left: 5px;
-    animation: blink 0.7s infinite;
+    animation: blink 0.9s infinite;
   }
 
   @keyframes blink {

@@ -443,7 +443,7 @@
   }
 </style>
 
-<div id="Knowledge" class=" glass">
+<div id="Knowledge" class=" glass hidden">
   <h1>Hard skills</h1>
   <section class="grid-container icons-space">
     {#each srcarray as item}

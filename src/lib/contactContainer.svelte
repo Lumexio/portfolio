@@ -15,6 +15,7 @@
     background-color: #212121;
     box-shadow: -0.5rem 0.5rem 0 #fab700;
     border: 3px solid #fab700;
+    border-radius: 1rem;
     
   }
   .temp {
@@ -61,13 +62,13 @@
   
 </style>
 
-<div id="Contact" class="home-container-style ">
+<div id="Contact" class="home-container-style  hidden">
   <div class="temp card">
-    <h1>Talk to me</h1>
+    <h1>Contact me</h1>
     <form style="text-align: right;"    action="mailto:lumexio.dev@gmail.com" method="post" enctype="text/plain">
       <input type="text" placeholder="Subject" />
       <textarea type="text" placeholder="Messege" />
-      <button  type="submit" id="button-primary">Send</button>
+      <button  type="submit" id="button-primary">Email me</button>
     </form>
   </div>
 </div>

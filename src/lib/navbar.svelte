@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<nav class="nav-style">
+<nav class="nav-style hidden">
   <ul>
     <li><a href="#Home">Home</a></li>
     <li><a href="#Knowledge">Knowledge</a></li>
