@@ -16,6 +16,8 @@
     "vite": "^3.0.7"
   },
   "dependencies": {
+    "@jamescoyle/svelte-icon": "^0.1.1",
+    "@mdi/js": "^7.1.96",
     "@splinetool/loader": "^0.9.104",
     "@splinetool/runtime": "^0.9.104",
     "node-sass": "^7.0.1",
