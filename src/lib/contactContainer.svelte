@@ -1,10 +1,21 @@
 <script>
   
 import SvgIcon from '@jamescoyle/svelte-icon';
-import { mdiGithub } from '@mdi/js';
+import { mdiGithub,mdiLinkedin } from '@mdi/js';
+const srcarray=[
+  {
+    path: mdiGithub,
+    src: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
+  },
+   {
+    path: mdiLinkedin,
+    src: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
+  }
+  ]
 </script>
 
 <style>
+
   h1 {
     margin: 1em;
   }
@@ -61,16 +72,25 @@ import { mdiGithub } from '@mdi/js';
   #button-primary:active {
     background-color: #e7fa00;
   }
+  .row-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-direction: row;
+  }
   
 </style>
 
 <div id="Contact" class="home-container-style  hidden">
   <div class="temp card">
     <h1>Contact me</h1>
-    <form style="text-align: right;"   >
-      
-      <button  type="submit" id="button-primary"  action="mailto:lumexio.dev@gmail.com" method="post" enctype="text/plain">Email me</button>
+    <div class="row-icon">
+    <form style="text-align: right;"  action="mailto:lumexio.dev@gmail.com" method="post" enctype="text/plain" >
+      <button  type="submit" id="button-primary"  >Email me</button>
     </form>
-    <button id="button-primary" style="padding: .2rem .7rem ;"><SvgIcon type="mdi" path={mdiGithub}></SvgIcon></button>
+    {#each srcarray as item}
+    <button id="button-primary"  style="padding: .3rem .7rem ;" onclick="window.location.href='{item.src}';"><SvgIcon type="mdi" path={item.path}></SvgIcon></button>
+    {/each}
+  </div>
   </div>
 </div>
