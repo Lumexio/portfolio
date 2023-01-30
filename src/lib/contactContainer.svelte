@@ -5,11 +5,11 @@ import { mdiGithub,mdiLinkedin } from '@mdi/js';
 const srcarray=[
   {
     path: mdiGithub,
-    src: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
+    src: 'https://github.com/Lumexio',
   },
    {
     path: mdiLinkedin,
-    src: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
+    src: 'https://www.linkedin.com/in/francisco-salazar-mendoza/',
   }
   ]
 </script>
@@ -89,7 +89,7 @@ const srcarray=[
       <button  type="submit" id="button-primary"  >Email me</button>
     </form>
     {#each srcarray as item}
-    <button id="button-primary"  style="padding: .3rem .7rem ;" onclick="window.location.href='{item.src}';"><SvgIcon type="mdi" path={item.path}></SvgIcon></button>
+    <button id="button-primary"  style="padding: .3rem .7rem ;" onclick="window.open('{item.src}','_blank');"><SvgIcon type="mdi" path={item.path}></SvgIcon></button>
     {/each}
   </div>
   </div>
