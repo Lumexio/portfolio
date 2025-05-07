@@ -10,7 +10,18 @@
   let depth = 1;
   function loadGLTF() {
     const loader = new GLTFLoader();
-    return loader.loadAsync(modelURL);
+    return loader
+      .loadAsync(modelURL)
+      .catch((error) => {
+        console.error('Error loading GLTF model:', error);
+        alert(
+          'Failed to load the model. Please check the console for details.'
+        );
+        throw error; // Rethrow the error to handle it in the calling context
+      })
+      .finally(() => {
+        console.log('GLTF model loading completed');
+      });
   }
   onMount(() => {
     loadGLTF().then((_model) => (model = _model));

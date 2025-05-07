@@ -3,7 +3,7 @@
   import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
   import * as SC from 'svelte-cubed';
 
-  const modelURL = '/src/assets/ship_alternative.glb';
+  const modelURL = '/public/ship_alternative.glb';
   let model = null;
   let width = 1;
   let height = 1;
