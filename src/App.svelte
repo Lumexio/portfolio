@@ -1,9 +1,9 @@
 <script>
   // import Navbar from './lib/navbar.svelte';
-  //import HomeContainer from './lib/homeContainer.svelte';
+  import HomeContainer from './lib/homeContainer.svelte';
   //import KnowledgeContainer from './lib/knowledgeContainer.svelte';
   import ThreeDContainer from './lib/ThreeDContainer.svelte';
-  //import ContactContainer from './lib/contactContainer.svelte';
+  import ContactContainer from './lib/contactContainer.svelte';
   import { onMount } from 'svelte';
 
   onMount(() => {
@@ -26,10 +26,11 @@
 </script>
 
 <main>
-  <!-- <Navbar />
+  <!-- <Navbar />--->
   <HomeContainer />
-  <KnowledgeContainer />
-  <ContactContainer /> -->
+  <!----
+  <KnowledgeContainer />-->
+  <ContactContainer />
   <ThreeDContainer />
 </main>
 

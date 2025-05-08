@@ -1,22 +1,22 @@
 <script>
-  import { onMount } from "svelte";
+  import { onMount } from 'svelte';
 
   onMount(() => {
     /**
      * @param {HTMLElement} el
      */
     function typeWriter(el) {
-      const textArray = el.innerHTML.split("");
-      el.innerHTML = "";
+      const textArray = el.innerHTML.split('');
+      el.innerHTML = '';
       textArray.forEach((letter, i) =>
         setTimeout(() => (el.innerHTML += letter), 95 * i)
       );
     }
 
-    let arrayCoder = ["frontend", "backend", "web"];
+    let arrayCoder = ['frontend', 'backend', 'web'];
 
     let interval = 1000;
-    let tagid = document.getElementById("codertag");
+    let tagid = document.getElementById('codertag');
 
     let i = 0;
 
@@ -54,11 +54,11 @@
   });
 </script>
 
-<div  class="home-container-style ">
-  <div id="Home" class="temp glass  hidden">
+<div class="home-container-style">
+  <div id="Home" class=" hidden">
     <h1 id="elementEl">Francisco Salazar Mendoza</h1>
     <h2>
-      <code id="codertag" />
+      <code id="codertag"></code>
       developer
     </h2>
   </div>
@@ -74,27 +74,9 @@
     place-items: center;
     height: 100vh;
   }
-  .glass {
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
-  }
-  .temp {
-    display: grid;
-    place-items: center;
-
-    grid-template-columns: repeat(1, minmax(5rem, 1fr));
-  }
 
   #elementEl::after {
-    content: "|";
+    content: '|';
     margin-left: 5px;
     animation: blink 0.9s infinite;
   }

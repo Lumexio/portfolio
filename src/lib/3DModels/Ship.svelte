@@ -44,7 +44,7 @@
 
 {#if model}
   <SC.Primitive
-    position="{[0, 0, 0]}"
+    position="{[0, 0.5, 0]}"
     rotation="{[spinx, spiny, spinz]}"
     object="{model.scene}"
     scale="{[width, height, depth]}"
