@@ -3,7 +3,9 @@
   import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
   import * as SC from 'svelte-cubed';
 
-  const modelURL = '/public/SpaceShip_Fire_Red.glb';
+  const modelURL = import.meta.env.PROD
+    ? '/SpaceShip_Fire_Red.glb'
+    : '/public/SpaceShip_Fire_Red.dev.glb';
   let model = null;
   let width = 1;
   let height = 1;
