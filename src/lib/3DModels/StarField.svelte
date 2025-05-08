@@ -1,7 +1,7 @@
 <script>
   import * as THREE from 'three';
   import * as SC from 'svelte-cubed';
-  const starPositions = Array(1000)
+  const starPositions = Array(3000)
     .fill()
     .map(() => {
       return Array(3)

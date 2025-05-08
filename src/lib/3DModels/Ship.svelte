@@ -3,7 +3,7 @@
   import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
   import * as SC from 'svelte-cubed';
 
-  const modelURL = '/ship.glb';
+  const modelURL = import.meta.env.PROD ? '/ship.glb' : '/public/ship.glb';
   let model = null;
   let width = 1;
   let height = 1;
@@ -17,7 +17,7 @@
         alert(
           'Failed to load the model. Please check the console for details.'
         );
-        throw error; // Rethrow the error to handle it in the calling context
+        throw error;
       })
       .finally(() => {
         console.log('GLTF model loading completed');

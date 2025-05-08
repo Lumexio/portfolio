@@ -3,11 +3,14 @@
 
   import Ship from './3DModels/Ship.svelte';
   import StarField from './3DModels/StarField.svelte';
+  import ShipAlternative from './3DModels/Ship_alternative.svelte';
+  import SpaceShipFireWhite from './3DModels/SpaceShip_fire_white.svelte';
 </script>
 
 <SC.Canvas physicallyCorrectLights="{true}" shadows="{true}">
   <Ship />
-
+  <ShipAlternative />
+  <SpaceShipFireWhite />
   <StarField />
 
   <SC.PerspectiveCamera position="{[5, 1.2, -1]}" />

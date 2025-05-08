@@ -19,7 +19,7 @@
 
 {#if model}
   <SC.Primitive
-    position="{[0, 0, 0]}"
+    position="{[-6, 1, 0]}"
     rotation="{[0, 1.5, 0]}"
     object="{model.scene}"
     scale="{[width, height, depth]}"
