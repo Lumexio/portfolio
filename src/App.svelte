@@ -5,6 +5,7 @@
   import ThreeDContainer from './lib/ThreeDContainer.svelte';
   import ContactContainer from './lib/contactContainer.svelte';
   import { onMount } from 'svelte';
+  import ReleasedProjects from './lib/ReleasedProjects.svelte';
 
   onMount(() => {
     console.log('mounted');
@@ -30,6 +31,7 @@
   <HomeContainer />
 
   <KnowledgeContainer />
+  <ReleasedProjects />
   <ContactContainer />
   <ThreeDContainer />
 </main>

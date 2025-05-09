@@ -13,8 +13,8 @@
   ];
 </script>
 
-<div id="Contact" class="home-container-style">
-  <div class="temp card hidden">
+<div class="home-container-style">
+  <div id="Contact" class="temp card hidden">
     <h1>Contact me</h1>
     <div class="row-icon">
       <form
@@ -38,26 +38,28 @@
 </div>
 
 <style scoped>
-  h1 {
-    margin: 1em;
+  #Contact {
+    margin: 2rem;
   }
+
   .home-container-style {
     display: grid;
     place-items: center;
     height: 100vh;
-    margin: 2rem;
+    width: 100%;
+
     align-items: center;
     justify-items: right;
   }
   .card {
     background-color: #212121;
-    box-shadow: 0.5rem 0.5rem 0 #fab700;
+
     border: 3px solid #fab700;
     border-radius: 1rem;
   }
   .temp {
     display: grid;
-    place-items: start;
+    place-items: center;
     grid-template-columns: repeat(1, minmax(5rem, 1fr));
   }
   input {
@@ -91,6 +93,9 @@
     background-color: #fab700;
     color: black;
     margin: 0.5rem;
+  }
+  #button-primary:hover {
+    border-color: #e7fa00;
   }
   #button-primary:active {
     background-color: #e7fa00;

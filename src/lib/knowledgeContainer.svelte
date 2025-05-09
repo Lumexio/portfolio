@@ -91,6 +91,10 @@
 </div>
 
 <style scoped>
+  .home-container-style {
+    height: 100vh;
+    width: 100%;
+  }
   #Knowledge {
     margin: 2rem;
   }

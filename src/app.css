@@ -33,17 +33,6 @@ canvas.svelte-1uqz219 {
   z-index: -1;
 }
 
-/*
-Aqui esta el estilo para el contenedor de la figura 3d en el background. para el main local
-
-.container.s-LzDeSs34ORWQ,
-canvas.s-LzDeSs34ORWQ {
-	position: fixed !important;
-	height: 100vh;
-	z-index: -1;
-}
-*/
-
 html {
   scroll-behavior: smooth;
 }
@@ -62,7 +51,6 @@ a:hover {
 
 body {
   margin: 0;
-
   min-width: 320px;
   min-height: 100vh;
 }
@@ -78,9 +66,8 @@ h1 {
 
 #app {
   max-width: 100%;
-  /* margin: 0 auto; */
-  display: grid;
-  place-content: center;
+  margin: 0 auto;
+
   text-align: center;
 }
 
@@ -102,24 +89,6 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-/**Comment while i make a light 3d animation mode
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a {
-    color: #213547;
-  }
-  a:hover {
-    color: #ff8c20;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
 
 .hidden {
   opacity: 0;
