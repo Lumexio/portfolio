@@ -13,21 +13,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  /* Keep only the variables we're using */
   --timesvelte: 8.2s;
-  --timecss: 7s;
-  --timejs: 6.5s;
   --timegit: 9.5s;
   --timephp: 5.4s;
-  --timehtml: 10s;
-  --timelinux: 8s;
-  --timenode: 6s;
   --timevue: 9s;
-  --timevuetifyjs: 5s;
-  --timetypescript: 10.5s;
-  --timeinsomnia: 7.3s;
+  --timereact: 6.5s;
 }
-/* Aqui esta el estilo para el contenedor de la figura 3d en el background. para el deploy   
-*/
+
+/* Aqui esta el estilo para el contenedor de la figura 3d en el background. para el deploy */
 .container.svelte-1uqz219,
 canvas.svelte-1uqz219 {
   position: fixed !important;

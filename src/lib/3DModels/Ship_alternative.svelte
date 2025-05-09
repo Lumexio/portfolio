@@ -22,14 +22,12 @@
   let spiny = 0.4;
   let spinz = 0;
 
-  const X_ROTATION_RANGE = 0.1; // Limit x rotation to ±0.2 radians (~11.5 degrees)
-  const Z_ROTATION_RANGE = 0.1; // Limit z rotation to ±0.1 radians (~5.7 degrees)
+  const X_ROTATION_RANGE = 0.1;
+  const Z_ROTATION_RANGE = 0.1;
 
   SC.onFrame(() => {
-    // Calculate rotation with limited ranges
-    //spinx = Math.cos(Date.now() * -0.001) * X_ROTATION_RANGE;
-    spiny += Math.cos(Date.now() * -0.001) * X_ROTATION_RANGE; // Continuous slow rotation on Y axis
-    spinz = Math.cos(Date.now() * -0.0005) * Z_ROTATION_RANGE; // Slower, more constrained Z rotation
+    spiny += Math.cos(Date.now() * -0.001) * X_ROTATION_RANGE;
+    spinz = Math.cos(Date.now() * -0.0005) * Z_ROTATION_RANGE;
   });
 </script>
 
