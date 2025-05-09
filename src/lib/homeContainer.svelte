@@ -70,9 +70,11 @@
     margin: 1em;
   }
   .home-container-style {
-    display: grid;
-    place-items: center;
+    display: flex;
     height: 100vh;
+    width: 100vw;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   #elementEl::after {

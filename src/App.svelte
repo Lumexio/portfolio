@@ -1,7 +1,7 @@
 <script>
   // import Navbar from './lib/navbar.svelte';
   import HomeContainer from './lib/homeContainer.svelte';
-  //import KnowledgeContainer from './lib/knowledgeContainer.svelte';
+  import KnowledgeContainer from './lib/knowledgeContainer.svelte';
   import ThreeDContainer from './lib/ThreeDContainer.svelte';
   import ContactContainer from './lib/contactContainer.svelte';
   import { onMount } from 'svelte';
@@ -28,8 +28,8 @@
 <main>
   <!-- <Navbar />--->
   <HomeContainer />
-  <!----
-  <KnowledgeContainer />-->
+
+  <KnowledgeContainer />
   <ContactContainer />
   <ThreeDContainer />
 </main>

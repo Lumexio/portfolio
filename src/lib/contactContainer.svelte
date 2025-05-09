@@ -1,21 +1,43 @@
 <script>
-  
-import SvgIcon from '@jamescoyle/svelte-icon';
-import { mdiGithub,mdiLinkedin } from '@mdi/js';
-const srcarray=[
-  {
-    path: mdiGithub,
-    src: 'https://github.com/Lumexio',
-  },
-   {
-    path: mdiLinkedin,
-    src: 'https://www.linkedin.com/in/francisco-salazar-mendoza/',
-  }
-  ]
+  import SvgIcon from '@jamescoyle/svelte-icon';
+  import { mdiGithub, mdiLinkedin } from '@mdi/js';
+  const srcarray = [
+    {
+      path: mdiGithub,
+      src: 'https://github.com/Lumexio',
+    },
+    {
+      path: mdiLinkedin,
+      src: 'https://www.linkedin.com/in/francisco-salazar-mendoza/',
+    },
+  ];
 </script>
 
-<style>
+<div id="Contact" class="home-container-style">
+  <div class="temp card hidden">
+    <h1>Contact me</h1>
+    <div class="row-icon">
+      <form
+        style="text-align: right;"
+        action="mailto:lumexio.dev@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <button type="submit" id="button-primary">Email me</button>
+      </form>
+      {#each srcarray as item}
+        <button
+          id="button-primary"
+          style="padding: .3rem .7rem ;"
+          on:click="{() => window.open(item.src, '_blank')}"
+          ><SvgIcon type="mdi" path="{item.path}"></SvgIcon></button
+        >
+      {/each}
+    </div>
+  </div>
+</div>
 
+<style scoped>
   h1 {
     margin: 1em;
   }
@@ -23,13 +45,15 @@ const srcarray=[
     display: grid;
     place-items: center;
     height: 100vh;
+    margin: 2rem;
+    align-items: center;
+    justify-items: right;
   }
   .card {
     background-color: #212121;
-    box-shadow: -0.5rem 0.5rem 0 #fab700;
+    box-shadow: 0.5rem 0.5rem 0 #fab700;
     border: 3px solid #fab700;
     border-radius: 1rem;
-    
   }
   .temp {
     display: grid;
@@ -61,13 +85,12 @@ const srcarray=[
     outline-style: double;
     border-radius: 2px;
   }
-  
+
   #button-primary {
     border-radius: 0.8em;
     background-color: #fab700;
     color: black;
     margin: 0.5rem;
-    
   }
   #button-primary:active {
     background-color: #e7fa00;
@@ -76,21 +99,6 @@ const srcarray=[
     display: flex;
     justify-content: center;
     align-items: center;
-  flex-direction: row;
+    flex-direction: row;
   }
-  
 </style>
-
-<div id="Contact" class="home-container-style  hidden">
-  <div class="temp card">
-    <h1>Contact me</h1>
-    <div class="row-icon">
-    <form style="text-align: right;"  action="mailto:lumexio.dev@gmail.com" method="post" enctype="text/plain" >
-      <button  type="submit" id="button-primary"  >Email me</button>
-    </form>
-    {#each srcarray as item}
-    <button id="button-primary"  style="padding: .3rem .7rem ;" onclick="window.open('{item.src}','_blank');"><SvgIcon type="mdi" path={item.path}></SvgIcon></button>
-    {/each}
-  </div>
-  </div>
-</div>

@@ -14,9 +14,12 @@
   let spinz = 0;
 
   SC.onFrame(() => {
-    spinx = Math.tan(Date.now() * -0.0001);
+    // spinx = Math.tan(Date.now() * -0.0001);
+    // spiny = Math.sin(Date.now() * 0.001);
+    // spinz = Math.cos(Date.now() * 0.001);
+    spinx = Math.cos(Date.now() * 0.001);
     spiny = Math.sin(Date.now() * 0.001);
-    spinz = Math.cos(Date.now() * 0.001);
+    spinz = Math.tan(Date.now() * -0.0001);
   });
 </script>
 

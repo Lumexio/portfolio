@@ -1,61 +1,61 @@
 <script>
   // @ts-nocheck
 
-  import sveltelogo from '../assets/svelte.svg'
+  import sveltelogo from '../assets/svelte.svg';
 
-  import gitlogo from '../assets/git.svg'
-  import phplogo from '../assets/php.svg'
+  import gitlogo from '../assets/git.svg';
+  import phplogo from '../assets/php.svg';
+  import reactjs from '../assets/reactjs.svg';
+  import linuxlogo from '../assets/linux.svg';
+  import nodelogo from '../assets/node.svg';
+  import vuelogo from '../assets/vue.svg';
+  import vuetifyjslogo from '../assets/vuetifyjs.svg';
 
-  import linuxlogo from '../assets/linux.svg'
-  import nodelogo from '../assets/node.svg'
-  import vuelogo from '../assets/vue.svg'
-  import vuetifyjslogo from '../assets/vuetifyjs.svg'
-
-  import insomnialogo from '../assets/insomnia.svg'
-  var root = document.querySelector(':root')
-  var rootStyles = getComputedStyle(root)
-  var time = rootStyles.getPropertyValue('--timesvelte')
+  import insomnialogo from '../assets/insomnia.svg';
+  var root = document.querySelector(':root');
+  var rootStyles = getComputedStyle(root);
+  var time = rootStyles.getPropertyValue('--timesvelte');
   function randtimeanimation() {
     root.style.setProperty(
       '--timesvelte',
-      Math.floor(Math.random() * 10) + 3 + 's',
-    )
+      Math.floor(Math.random() * 10) + 3 + 's'
+    );
 
     root.style.setProperty(
       '--timegit',
-      Math.floor(Math.random() * 10) + 3 + 's',
-    )
+      Math.floor(Math.random() * 10) + 3 + 's'
+    );
     root.style.setProperty(
       '--timephp',
-      Math.floor(Math.random() * 10) + 3 + 's',
-    )
+      Math.floor(Math.random() * 10) + 3 + 's'
+    );
 
     root.style.setProperty(
       '--timelinux',
-      Math.floor(Math.random() * 10) + 3 + 's',
-    )
+      Math.floor(Math.random() * 10) + 3 + 's'
+    );
     root.style.setProperty(
       '--timenode',
-      Math.floor(Math.random() * 10) + 3 + 's',
-    )
+      Math.floor(Math.random() * 10) + 3 + 's'
+    );
     root.style.setProperty(
       '--timevue',
-      Math.floor(Math.random() * 10) + 3 + 's',
-    )
+      Math.floor(Math.random() * 10) + 3 + 's'
+    );
     root.style.setProperty(
       '--timevuetifyjs',
-      Math.floor(Math.random() * 10) + 3 + 's',
-    )
+      Math.floor(Math.random() * 10) + 3 + 's'
+    );
 
     root.style.setProperty(
       '--timeinsomnia',
-      Math.floor(Math.random() * 10) + 3 + 's',
-    )
+      Math.floor(Math.random() * 10) + 3 + 's'
+    );
   }
-  randtimeanimation()
+  randtimeanimation();
   setInterval(() => {
-    randtimeanimation()
-  }, 10000)
+    randtimeanimation();
+  }, 10000);
 
   let srcarray = [
     {
@@ -72,13 +72,6 @@
       css: 'vue',
       target: '_blank',
     },
-    {
-      src: vuetifyjslogo,
-      href: 'https://vuetifyjs.com/en/',
-      alt: 'Vuetifyjs Logo',
-      css: 'vuetifyjs',
-      target: '_blank',
-    },
 
     {
       src: phplogo,
@@ -88,19 +81,12 @@
       target: '_blank',
     },
     {
-      src: nodelogo,
-      href: 'https://developer.mozilla.org/en-US/docs/Web/javascript',
-      alt: 'Node Logo',
-      css: 'node',
+      src: reactjs,
+      href: 'https://reactjs.org/',
+      alt: 'React Logo',
+      css: 'react',
       target: '_blank',
     },
-    // {
-    //   src: insomnialogo,
-    //   href: 'https://git-scm.com/doc',
-    //   alt: 'Insomnia Logo',
-    //   css: 'insomnia',
-    //   target: '_blank',
-    // },
     {
       src: gitlogo,
       href: 'https://git-scm.com/doc',
@@ -108,33 +94,37 @@
       css: 'svelte',
       target: '_blank',
     },
-    // {
-    //   src: linuxlogo,
-    //   href: 'https://svelte.dev',
-    //   alt: 'Linux Logo',
-    //   css: 'linux',
-    //   target: '_blank',
-    // },
-  ]
+  ];
 </script>
 
-<style>
-  .glass {
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+<div class="home-container-style">
+  <div id="Knowledge" class=" hidden">
+    <h1>Hard skills</h1>
+    <section class="grid-container icons-space">
+      {#each srcarray as item}
+        <div class="flex-logo">
+          <a href="{item.href}" target="{item.target}">
+            <img src="{item.src}" class="logo {item.css}" alt="{item.alt}" />
+          </a>
+        </div>
+      {/each}
+    </section>
+  </div>
+</div>
+
+<style scoped>
+  #Knowledge {
+    margin: 2rem;
+  }
+  h1 {
+    text-align: start;
   }
   .grid-container {
     display: grid;
+
     gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(95px, 1fr));
   }
   .flex-logo {
     display: flex;
@@ -165,6 +155,9 @@
   .logo.php:hover {
     filter: drop-shadow(0 0 2em #c441c4aa);
   }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
 
   .logo.linux:hover {
     filter: drop-shadow(0 0 2em #00ffeaaa);
@@ -187,6 +180,7 @@
 
   .logo.svelte::after,
   .logo.git::after,
+  .logo.react::after,
   .logo.insomnia::after,
   .logo.linux::after,
   .logo.node::after,
@@ -208,6 +202,7 @@
   }
   .logo.svelte:hover,
   .logo.git:hover,
+  .logo.react:hover,
   .logo.insomnia:hover,
   .logo.linux:hover,
   .logo.node:hover,
@@ -223,6 +218,7 @@
   .logo.git,
   .logo.insomnia,
   .logo.linux,
+  .logo.react,
   .logo.node,
   .logo.php,
   .logo.vue,
@@ -310,6 +306,31 @@
     }
   }
 
+  .logo.react {
+    animation: react-shadow 2s ease-in-out var(--timereact) infinite;
+  }
+  @-webkit-keyframes react-shadow {
+    0% {
+      filter: none;
+    }
+    50% {
+      filter: drop-shadow(0 0 2em #61dafbaa);
+    }
+    100% {
+      filter: none;
+    }
+  }
+  @keyframes react-shadow {
+    0% {
+      filter: none;
+    }
+    50% {
+      filter: drop-shadow(0 0 2em #61dafbaa);
+    }
+    100% {
+      filter: none;
+    }
+  }
   .logo.linux {
     animation: linux-shadow 2s ease-in-out var(--timelinux) infinite;
   }
@@ -442,16 +463,3 @@
     }
   }
 </style>
-
-<div id="Knowledge" class=" glass hidden">
-  <h1>Hard skills</h1>
-  <section class="grid-container icons-space">
-    {#each srcarray as item}
-      <div class="flex-logo">
-        <a href={item.href} target={item.target}>
-          <img src={item.src} class="logo {item.css}" alt={item.alt} />
-        </a>
-      </div>
-    {/each}
-  </section>
-</div>
