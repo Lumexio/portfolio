@@ -1,5 +1,5 @@
 :root {
-  font-family: "Cascadia code";
+  font-family: 'Cascadia code';
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -26,8 +26,8 @@
 .container.svelte-1uqz219,
 canvas.svelte-1uqz219 {
   position: fixed !important;
-  width: 100%;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   left: 0;
   top: 0;
   z-index: -1;

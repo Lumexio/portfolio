@@ -17,7 +17,7 @@
 
 
   .home-container-style {
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
     align-items: center;
     display: grid;

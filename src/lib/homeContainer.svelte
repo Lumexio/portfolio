@@ -75,12 +75,15 @@
 <style scoped>
   .home-container-style {
     display: flex;
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
     justify-content: flex-end;
     align-items: center;
   }
-
+h1{
+  color:floralwhite;
+  text-shadow: 0 0 5px black;
+}
   #elementEl::after {
     content: '|';
     margin-left: 5px;

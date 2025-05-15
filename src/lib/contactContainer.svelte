@@ -45,7 +45,7 @@
   .home-container-style {
     display: grid;
     place-items: center;
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
 
     align-items: center;
