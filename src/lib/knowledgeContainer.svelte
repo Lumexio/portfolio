@@ -94,6 +94,8 @@
   .home-container-style {
     height: 100vh;
     width: 100%;
+    display: flex;
+    align-items: center;
   }
   #Knowledge {
     margin: 2rem;

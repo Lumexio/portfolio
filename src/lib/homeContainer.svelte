@@ -15,7 +15,7 @@
 
     let arrayCoder = ['frontend', 'backend', 'web'];
 
-    let interval = 1000;
+    let interval = 3000;
     let tagid = document.getElementById('codertag');
 
     let i = 0;
@@ -25,7 +25,15 @@
      */
     function changer(el) {
       el.innerHTML = arrayCoder[0];
-
+      // i  want to put a fade in and out effect
+  
+  el.classList.add('fade-in');
+      setTimeout(() => {
+        el.classList.remove('fade-in');
+      }, 2000);
+       
+       
+ 
       setInterval(() => {
         i++;
         if (i > 2) {
@@ -88,12 +96,17 @@
     }
   }
   #codertag {
-    background-color: yellow;
+    background-color: #fab700;
     color: black;
     border-radius: 5px;
-    padding: 3px;
+    padding: 6px;
+    
+    
   }
   code {
-    font-family: tahoma;
+    font-family: 'Cascadia code';
   }
+
+
+  #codertag
 </style>

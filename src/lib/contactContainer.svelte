@@ -89,6 +89,7 @@
   }
 
   #button-primary {
+
     border-radius: 0.8em;
     background-color: #fab700;
     color: black;
