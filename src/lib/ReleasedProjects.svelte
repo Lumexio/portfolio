@@ -10,6 +10,27 @@
     >
       StockMachine
     </button>
+    <button
+      id="button-primary"
+      style="padding: 1rem 2rem; margin: 1rem"
+      on:click="{() => window.open('https://merchantgo.store', '_blank')}"
+    >
+      MerchantGO
+    </button>
+    <button
+      id="button-primary"
+      style="padding: 1rem 2rem; margin: 1rem"
+      on:click="{() => window.open('https://quiromedic.site', '_blank')}"
+    >
+      QuiroMedic
+    </button>
+    <button
+      id="button-primary"
+      style="padding: 1rem 2rem; margin: 1rem"
+      on:click="{() => window.open('https://cometpocketmachinery.online', '_blank')}"
+    >
+      Comet pocket machinery
+    </button>
   </div>
 </div>
 
