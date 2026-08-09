@@ -4,32 +4,32 @@
   <div id="Home" class=" hidden">
     <h1>Released projects</h1>
     <button
-      id="button-primary"
+      class="btn-3d"
       style="padding: 1rem 2rem; margin: 1rem"
       on:click="{() => window.open('https://stockmachine.online', '_blank')}"
     >
-      StockMachine
+      <span class="btn-3d-inner">StockMachine</span>
     </button>
     <button
-      id="button-primary"
+      class="btn-3d"
       style="padding: 1rem 2rem; margin: 1rem"
       on:click="{() => window.open('https://merchantgo.store', '_blank')}"
     >
-      MerchantGO
+      <span class="btn-3d-inner">MerchantGO</span>
     </button>
     <button
-      id="button-primary"
+      class="btn-3d"
       style="padding: 1rem 2rem; margin: 1rem"
       on:click="{() => window.open('https://quiromedic.site', '_blank')}"
     >
-      QuiroMedic
+      <span class="btn-3d-inner">QuiroMedic</span>
     </button>
     <button
-      id="button-primary"
+      class="btn-3d"
       style="padding: 1rem 2rem; margin: 1rem"
       on:click="{() => window.open('https://cometpocketmachinery.online', '_blank')}"
     >
-      Comet pocket machinery
+      <span class="btn-3d-inner">Comet pocket machinery</span>
     </button>
   </div>
 </div>

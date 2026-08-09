@@ -23,14 +23,14 @@
         method="post"
         enctype="text/plain"
       >
-        <button type="submit" id="button-primary">Email me</button>
+        <button type="submit" class="btn-3d"><span class="btn-3d-inner">Email me</span></button>
       </form>
       {#each srcarray as item}
         <button
-          id="button-primary"
+          class="btn-3d"
           style="padding: .3rem .7rem ;"
           on:click="{() => window.open(item.src, '_blank')}"
-          ><SvgIcon type="mdi" path="{item.path}"></SvgIcon></button
+          ><span class="btn-3d-inner" style="padding: 0.5rem 1rem;"><SvgIcon type="mdi" path="{item.path}"></SvgIcon></span></button
         >
       {/each}
     </div>
@@ -88,19 +88,6 @@
     border-radius: 2px;
   }
 
-  #button-primary {
-
-    border-radius: 0.8em;
-    background-color: #fab700;
-    color: black;
-    margin: 0.5rem;
-  }
-  #button-primary:hover {
-    border-color: #e7fa00;
-  }
-  #button-primary:active {
-    background-color: #e7fa00;
-  }
   .row-icon {
     display: flex;
     justify-content: center;

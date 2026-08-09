@@ -81,8 +81,10 @@
     <section class="grid-container icons-space">
       {#each srcarray as item}
         <div class="flex-logo">
-          <a href="{item.href}" target="{item.target}">
-            <img src="{item.src}" class="logo {item.css}" alt="{item.alt}" />
+          <a href="{item.href}" target="{item.target}" class="btn-3d-circle">
+            <span class="btn-3d-circle-inner">
+              <img src="{item.src}" class="logo {item.css}" alt="{item.alt}" />
+            </span>
           </a>
         </div>
       {/each}
