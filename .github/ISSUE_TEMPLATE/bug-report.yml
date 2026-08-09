@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a reproducible portfolio display or interaction problem.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Page content or navigation
+        - Responsive layout
+        - 3D model or animation
+        - Contact or external link
+        - Build or deployment
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser, device, and viewport
+      placeholder: Safari on iPhone 15, portrait
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or console output
+      description: Remove personal or sensitive information.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues for duplicates.
+          required: true

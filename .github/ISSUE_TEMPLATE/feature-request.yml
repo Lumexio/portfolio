@@ -1,0 +1,34 @@
+name: Feature request
+description: Propose a focused portfolio improvement.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Goal
+      description: What visitor need or portfolio outcome should improve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the smallest useful result.
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: Content, asset, or link changes
+  - type: textarea
+    id: ux
+    attributes:
+      label: Responsive, accessibility, motion, and performance considerations
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues for a similar request.
+          required: true
