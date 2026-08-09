@@ -20,7 +20,7 @@
     "@mdi/js": "^7.1.96",
     "@splinetool/loader": "^0.9.104",
     "@splinetool/runtime": "^0.9.104",
-    "node-sass": "^7.0.1",
+    "node-sass": "^9.0.0",
     "sass": "^1.54.8",
     "svelte-cubed": "^0.2.1",
     "svelte-preprocess": "^4.10.7",
