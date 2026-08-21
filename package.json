@@ -21,7 +21,7 @@
   "dependencies": {
     "@jamescoyle/svelte-icon": "^0.1.1",
     "@mdi/js": "^7.1.96",
-    "@splinetool/loader": "^0.9.104",
+    "@splinetool/loader": "^1.12.98",
     "@splinetool/runtime": "^0.9.104",
     "sass": "^1.54.8",
     "svelte-cubed": "^0.2.1",
